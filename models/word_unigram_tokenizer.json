@@ -1,0 +1,1158 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[BOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[EOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 5,
+      "content": ",",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 6,
+      "content": "!",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 7,
+      "content": "?",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 9,
+      "content": "Eating",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 10,
+      "content": "France",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 12,
+      "content": "Our",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 13,
+      "content": "The",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 15,
+      "content": "after",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 17,
+      "content": "barn",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 18,
+      "content": "before",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 19,
+      "content": "boat",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 20,
+      "content": "calming",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 21,
+      "content": "carnival",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 22,
+      "content": "company's",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 23,
+      "content": "customer",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 24,
+      "content": "database",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 25,
+      "content": "day",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 26,
+      "content": "deep",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 27,
+      "content": "despite",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 28,
+      "content": "eating",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 29,
+      "content": "entire",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 30,
+      "content": "fell",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 31,
+      "content": "guest",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 32,
+      "content": "highlight",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 33,
+      "content": "hike",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 34,
+      "content": "hints",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 35,
+      "content": "horse",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 36,
+      "content": "hotdog",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 37,
+      "content": "hovered",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 39,
+      "content": "into",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 40,
+      "content": "leaked",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 41,
+      "content": "leave",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 42,
+      "content": "long",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 43,
+      "content": "love",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 44,
+      "content": "man",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 46,
+      "content": "matron",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 47,
+      "content": "multiple",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 48,
+      "content": "my",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 49,
+      "content": "of",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 50,
+      "content": "old",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 51,
+      "content": "online",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 52,
+      "content": "past",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 53,
+      "content": "pizza",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 54,
+      "content": "raced",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 55,
+      "content": "refused",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 56,
+      "content": "rushing",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 57,
+      "content": "silently",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 58,
+      "content": "sound",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 60,
+      "content": "spacecraft",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 61,
+      "content": "the",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 63,
+      "content": "unwelcome",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 64,
+      "content": "vanishing",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 65,
+      "content": "was",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 66,
+      "content": "waterfall",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 76,
+      "content": "a",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 77,
+      "content": "in",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 78,
+      "content": ".",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 82,
+      "content": "at",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 91,
+      "content": "I",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 100,
+      "content": "space",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 109,
+      "content": "mat",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 112,
+      "content": "to",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "Unigram",
+    "unk_id": 1,
+    "vocab": [
+      [
+        "[PAD]",
+        0.0
+      ],
+      [
+        "[UNK]",
+        0.0
+      ],
+      [
+        "[BOS]",
+        0.0
+      ],
+      [
+        "[EOS]",
+        0.0
+      ],
+      [
+        ".",
+        0.0
+      ],
+      [
+        ",",
+        0.0
+      ],
+      [
+        "!",
+        0.0
+      ],
+      [
+        "?",
+        0.0
+      ],
+      [
+        ".",
+        0.0
+      ],
+      [
+        "Eating",
+        0.0
+      ],
+      [
+        "France",
+        0.0
+      ],
+      [
+        "I",
+        0.0
+      ],
+      [
+        "Our",
+        0.0
+      ],
+      [
+        "The",
+        0.0
+      ],
+      [
+        "a",
+        0.0
+      ],
+      [
+        "after",
+        0.0
+      ],
+      [
+        "at",
+        0.0
+      ],
+      [
+        "barn",
+        0.0
+      ],
+      [
+        "before",
+        0.0
+      ],
+      [
+        "boat",
+        0.0
+      ],
+      [
+        "calming",
+        0.0
+      ],
+      [
+        "carnival",
+        0.0
+      ],
+      [
+        "company's",
+        0.0
+      ],
+      [
+        "customer",
+        0.0
+      ],
+      [
+        "database",
+        0.0
+      ],
+      [
+        "day",
+        0.0
+      ],
+      [
+        "deep",
+        0.0
+      ],
+      [
+        "despite",
+        0.0
+      ],
+      [
+        "eating",
+        0.0
+      ],
+      [
+        "entire",
+        0.0
+      ],
+      [
+        "fell",
+        0.0
+      ],
+      [
+        "guest",
+        0.0
+      ],
+      [
+        "highlight",
+        0.0
+      ],
+      [
+        "hike",
+        0.0
+      ],
+      [
+        "hints",
+        0.0
+      ],
+      [
+        "horse",
+        0.0
+      ],
+      [
+        "hotdog",
+        0.0
+      ],
+      [
+        "hovered",
+        0.0
+      ],
+      [
+        "in",
+        0.0
+      ],
+      [
+        "into",
+        0.0
+      ],
+      [
+        "leaked",
+        0.0
+      ],
+      [
+        "leave",
+        0.0
+      ],
+      [
+        "long",
+        0.0
+      ],
+      [
+        "love",
+        0.0
+      ],
+      [
+        "man",
+        0.0
+      ],
+      [
+        "mat",
+        0.0
+      ],
+      [
+        "matron",
+        0.0
+      ],
+      [
+        "multiple",
+        0.0
+      ],
+      [
+        "my",
+        0.0
+      ],
+      [
+        "of",
+        0.0
+      ],
+      [
+        "old",
+        0.0
+      ],
+      [
+        "online",
+        0.0
+      ],
+      [
+        "past",
+        0.0
+      ],
+      [
+        "pizza",
+        0.0
+      ],
+      [
+        "raced",
+        0.0
+      ],
+      [
+        "refused",
+        0.0
+      ],
+      [
+        "rushing",
+        0.0
+      ],
+      [
+        "silently",
+        0.0
+      ],
+      [
+        "sound",
+        0.0
+      ],
+      [
+        "space",
+        0.0
+      ],
+      [
+        "spacecraft",
+        0.0
+      ],
+      [
+        "the",
+        0.0
+      ],
+      [
+        "to",
+        0.0
+      ],
+      [
+        "unwelcome",
+        0.0
+      ],
+      [
+        "vanishing",
+        0.0
+      ],
+      [
+        "was",
+        0.0
+      ],
+      [
+        "waterfall",
+        0.0
+      ],
+      [
+        "e",
+        -2.289998368977816
+      ],
+      [
+        "l",
+        -2.8562832241455567
+      ],
+      [
+        "s",
+        -2.9468514603905103
+      ],
+      [
+        "h",
+        -2.99479797375147
+      ],
+      [
+        "t",
+        -3.1151845877724718
+      ],
+      [
+        "r",
+        -3.127041941158725
+      ],
+      [
+        "d",
+        -3.355000175801486
+      ],
+      [
+        "o",
+        -3.514818930942991
+      ],
+      [
+        "g",
+        -3.523324249069795
+      ],
+      [
+        "a",
+        -3.5374450667624346
+      ],
+      [
+        "in",
+        -3.6044871051698655
+      ],
+      [
+        ".",
+        -3.667865052529013
+      ],
+      [
+        "wa",
+        -3.838604110839301
+      ],
+      [
+        "f",
+        -3.9827903774098905
+      ],
+      [
+        "T",
+        -4.03453171919568
+      ],
+      [
+        "at",
+        -4.122666946719236
+      ],
+      [
+        "m",
+        -4.239527622888591
+      ],
+      [
+        "y",
+        -4.28453171919568
+      ],
+      [
+        "an",
+        -4.2973717731056205
+      ],
+      [
+        "c",
+        -4.320097247884901
+      ],
+      [
+        "i",
+        -4.460717967669239
+      ],
+      [
+        "u",
+        -4.512063652063119
+      ],
+      [
+        "b",
+        -4.5641941174921
+      ],
+      [
+        "p",
+        -4.590683414647154
+      ],
+      [
+        "I",
+        -4.617865052529013
+      ],
+      [
+        "on",
+        -4.621994965333135
+      ],
+      [
+        "us",
+        -4.734168071619365
+      ],
+      [
+        "hin",
+        -4.803851974643589
+      ],
+      [
+        "re",
+        -4.830052376126295
+      ],
+      [
+        "F",
+        -5.117865052529013
+      ],
+      [
+        "z",
+        -5.117865052529013
+      ],
+      [
+        "va",
+        -5.117865623429554
+      ],
+      [
+        "ke",
+        -5.117865801345308
+      ],
+      [
+        "space",
+        -5.118280662979633
+      ],
+      [
+        "ent",
+        -5.120539112962835
+      ],
+      [
+        "un",
+        -5.120578180853132
+      ],
+      [
+        "igh",
+        -5.126060332052662
+      ],
+      [
+        "pi",
+        -5.139636705185137
+      ],
+      [
+        "com",
+        -5.148741202308505
+      ],
+      [
+        "aft",
+        -5.1515992840722795
+      ],
+      [
+        "lea",
+        -5.1535928631882335
+      ],
+      [
+        "ove",
+        -5.154727859912629
+      ],
+      [
+        "mat",
+        -5.1740058454368585
+      ],
+      [
+        "arn",
+        -5.216916118598881
+      ],
+      [
+        "ce",
+        -5.292331796308913
+      ],
+      [
+        "to",
+        -5.416770596961667
+      ],
+      [
+        "ho",
+        -5.532938939865976
+      ],
+      [
+        "st",
+        -5.600524394675572
+      ],
+      [
+        "ni",
+        -5.909643776392771
+      ],
+      [
+        "ve",
+        -6.029117429375329
+      ],
+      [
+        "w",
+        -6.081587816076318
+      ],
+      [
+        "E",
+        -6.117865052529013
+      ],
+      [
+        "O",
+        -6.117865052529013
+      ],
+      [
+        "'",
+        -6.117865052529013
+      ],
+      [
+        "ome",
+        -6.168805755317259
+      ],
+      [
+        "pa",
+        -6.178190746673232
+      ],
+      [
+        "ter",
+        -6.184377124939257
+      ],
+      [
+        "al",
+        -6.279582328214616
+      ],
+      [
+        "de",
+        -6.33067298894376
+      ],
+      [
+        "ace",
+        -6.368253117192455
+      ],
+      [
+        "ba",
+        -6.374258602609222
+      ],
+      [
+        "ef",
+        -6.479396951260349
+      ],
+      [
+        "ti",
+        -6.606145159614424
+      ],
+      [
+        "da",
+        -6.688459182316745
+      ],
+      [
+        "hi",
+        -6.698599951136742
+      ],
+      [
+        "k",
+        -7.249517247739156
+      ],
+      [
+        "n",
+        -7.249617247739157
+      ],
+      [
+        "v",
+        -7.249717247739157
+      ],
+      [
+        "ca",
+        -7.249717247739157
+      ]
+    ],
+    "byte_fallback": false
+  }
+}

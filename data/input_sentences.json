@@ -1,0 +1,75 @@
+{
+    "sentences": [
+        {
+            "text": "I was a mat in France",
+            "category": "simple",
+            "length": 7,
+            "notes": "Simple declarative sentence"
+        },
+        {
+            "text": "I was a matron in France",
+            "category": "simple",
+            "length": 7,
+            "notes": "Similar structure to first sentence"
+        },
+        {
+            "text": "The unwelcome guest refused to leave despite multiple hints.",
+            "category": "complex",
+            "length": 10,
+            "notes": "Complex sentence with multiple clauses"
+        },
+        {
+            "text": "Eating a hotdog at the carnival was the highlight of my day.",
+            "category": "complex",
+            "length": 12,
+            "notes": "Gerund phrase as subject"
+        },
+        {
+            "text": "The spacecraft hovered silently before vanishing into deep space.",
+            "category": "complex",
+            "length": 10,
+            "notes": "Complex sentence with temporal relation"
+        },
+        {
+            "text": "Our company's entire customer database was leaked online.",
+            "category": "complex",
+            "length": 9,
+            "notes": "Contains possessive and compound words"
+        },
+        {
+            "text": "The sound of the rushing waterfall was calming after a long hike.",
+            "category": "complex",
+            "length": 12,
+            "notes": "Complex sentence with prepositional phrases"
+        },
+        {
+            "text": "The old man the boat.",
+            "category": "garden_path",
+            "length": 5,
+            "notes": "Classic garden path sentence"
+        },
+        {
+            "text": "The horse raced past the barn fell.",
+            "category": "garden_path",
+            "length": 8,
+            "notes": "Another garden path sentence"
+        },
+        {
+            "text": "I love eating pizza",
+            "category": "simple",
+            "length": 4,
+            "notes": "Simple sentence with gerund"
+        }
+    ],
+    "metadata": {
+        "total_sentences": 10,
+        "categories": {
+            "simple": 3,
+            "complex": 5,
+            "garden_path": 2
+        },
+        "average_length": 8.5,
+        "max_length": 12,
+        "min_length": 4
+    }
+} 
