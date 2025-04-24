@@ -2,20 +2,22 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import csv
 import os
+import json
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # Set the Hugging Face cache directory
 os.environ['TRANSFORMERS_CACHE'] = '/N/slate/srcheb/huggingface_cache'
 
-# Model ID
-model_id = "shenzhi-wang/Llama3-70B-Chinese-Chat"
+# DeepSeek Qwen 1.5B distill model
+model_id = "Qwen/Qwen2.5-7B-Instruct-1M"
 
 # Load tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained(
-    model_id, torch_dtype=torch.float16, device_map="auto", trust_remote_code=True
-).eval()
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id).eval()
+model = model.to("cuda" if torch.cuda.is_available() else "cpu")
 
-# Tokenized garden-path sentences
+# Tokenized sentences (word-level)
 Tokenized_Sents = [
     ['批评', '学生', '的', '教官', '之后', ',', '那位', '督导', '打算', '取消', '这次', '活动'],
     ['举报', '主管', '的', '秘书', '之前', ',', '那个', '员工', '反复', '确认了', '录音', '证据'],
@@ -34,49 +36,94 @@ Tokenized_Sents = [
 
 def compute_word_surprisal(sentences, model, tokenizer):
     result = []
-    
+    terminal_log = []
+
     for sentence_id, words in enumerate(sentences, start=1):
-        sentence_str = ''.join(words)  # Full sentence for reference
-        
+        sentence_str = ''.join(words)
+        terminal_log.append(f"Processing Sentence {sentence_id}: {sentence_str}")
+
         for word_id, word in enumerate(words, start=1):
-            # Construct input string up to current word
+            if word_id > 8:
+                continue
+
             current_input = ''.join(words[:word_id])
             tokenized_input = tokenizer(current_input, return_tensors="pt", add_special_tokens=False)
-            
-            # Move tensors to same device as model
             tokenized_input = {k: v.to(model.device) for k, v in tokenized_input.items()}
-            
+
             with torch.no_grad():
                 outputs = model(**tokenized_input)
-            
-            logits = outputs.logits  # Shape: [1, seq_len, vocab_size]
+
+            logits = outputs.logits
             probs = torch.softmax(logits, dim=-1)
 
-            # Get the last token ID in the input
-            last_token_id = tokenized_input["input_ids"][0, -1]
-            last_prob = probs[0, -1, last_token_id]
-            surprisal = -torch.log(last_prob)
+            word_tokens = tokenizer(word, add_special_tokens=False)["input_ids"]
+            terminal_log.append(f"Word_ID {word_id}: '{word}' | Token IDs: {word_tokens}")
+
+            token_probs = []
+            for i in range(-len(word_tokens), 0):
+                token_id = tokenized_input["input_ids"][0, i]
+                prob = probs[0, i, token_id]
+                token_probs.append(prob.item())
+                terminal_log.append(f"  Token ID {token_id}: Prob = {prob.item():.6f}")
+
+            word_prob = torch.tensor(token_probs).log().sum().exp()
+            surprisal = -torch.log(word_prob)
+            surprisal_value = surprisal.item()
+
+            terminal_log.append(f"  Final Surprisal: {surprisal_value:.4f}")
 
             result.append({
                 "Sentence_ID": sentence_id,
                 "Sentence": sentence_str,
                 "Word_ID": word_id,
                 "Word": word,
-                "Surprisal value": surprisal.item()
+                "Surprisal value": surprisal_value
             })
 
-    return result
+    return result, terminal_log
 
-# Run surprisal computation
-output = compute_word_surprisal(Tokenized_Sents, model, tokenizer)
+# Run analysis
+output, logs = compute_word_surprisal(Tokenized_Sents, model, tokenizer)
 
-# Save results to CSV
-csv_filename = "../results/chinese_llama3_70B_surprisal.csv"
+# Save CSV
+csv_filename = "../results/qwen2-5-7b_surprisal.csv"
 os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
-
 with open(csv_filename, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=output[0].keys())
     writer.writeheader()
     writer.writerows(output)
 
-print(f"✅ Results saved to: {csv_filename}")
+# Save logs as JSON
+log_filename = "../results/qwen2-5-7b_log.json"
+with open(log_filename, mode="w", encoding="utf-8") as log_file:
+    json.dump(logs, log_file, indent=2, ensure_ascii=False)
+
+print(f"Results saved to: {csv_filename}")
+print(f"Terminal log saved to: {log_filename}")
+
+
+# Load the CSV results
+df = pd.read_csv(csv_filename)
+
+# Filter for Word_IDs 1 to 8
+df_filtered = df[df["Word_ID"].isin(range(1, 9))]
+
+# Group by Word_ID and calculate average surprisal
+avg_surprisal = df_filtered.groupby("Word_ID")["Surprisal value"].mean().reset_index()
+
+# Plot the bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(avg_surprisal["Word_ID"], avg_surprisal["Surprisal value"], width=0.6, color="#66BB6A")
+plt.xlabel("Word Position in Sentence (Word_ID)")
+plt.ylabel("Average Surprisal")
+plt.title("Average Surprisal for Word Positions 1 to 8")
+plt.xticks(avg_surprisal["Word_ID"])
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+# Save the plot
+plot_path = "../results/qwen2-5-7b_surprisal_barplot.png"
+plt.tight_layout()
+plt.savefig(plot_path)
+plt.close()
+
+print(f"Bar graph saved to: {plot_path}")
