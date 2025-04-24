@@ -1,0 +1,240 @@
+{
+  "I was a mat in France": {
+    "pieces": [
+      "\u2581I",
+      "\u2581was",
+      "\u2581a",
+      "\u2581mat",
+      "\u2581in",
+      "\u2581France"
+    ],
+    "ids": [
+      122,
+      10,
+      8,
+      22235,
+      7,
+      469
+    ]
+  },
+  "I was a matron in France": {
+    "pieces": [
+      "\u2581I",
+      "\u2581was",
+      "\u2581a",
+      "\u2581matron",
+      "\u2581in",
+      "\u2581France"
+    ],
+    "ids": [
+      122,
+      10,
+      8,
+      44040,
+      7,
+      469
+    ]
+  },
+  "The unwelcome guest refused to leave despite multiple hints.": {
+    "pieces": [
+      "\u2581The",
+      "\u2581unwelcome",
+      "\u2581guest",
+      "\u2581refused",
+      "\u2581to",
+      "\u2581leave",
+      "\u2581despite",
+      "\u2581multiple",
+      "\u2581hints",
+      "."
+    ],
+    "ids": [
+      12,
+      72309,
+      1795,
+      2589,
+      9,
+      1543,
+      1723,
+      1505,
+      25896,
+      4
+    ]
+  },
+  "Eating a hotdog at the carnival was the highlight of my day.": {
+    "pieces": [
+      "\u2581Eating",
+      "\u2581a",
+      "\u2581hot",
+      "dog",
+      "\u2581at",
+      "\u2581the",
+      "\u2581carnival",
+      "\u2581was",
+      "\u2581the",
+      "\u2581highlight",
+      "\u2581of",
+      "\u2581my",
+      "\u2581day",
+      "."
+    ],
+    "ids": [
+      43426,
+      8,
+      3477,
+      22413,
+      21,
+      2,
+      17478,
+      10,
+      2,
+      9408,
+      5,
+      1355,
+      304,
+      4
+    ]
+  },
+  "The spacecraft hovered silently before vanishing into deep space.": {
+    "pieces": [
+      "\u2581The",
+      "\u2581spacecraft",
+      "\u2581hover",
+      "ed",
+      "\u2581silently",
+      "\u2581before",
+      "\u2581vanishing",
+      "\u2581into",
+      "\u2581deep",
+      "\u2581space",
+      "."
+    ],
+    "ids": [
+      12,
+      10215,
+      49430,
+      682,
+      48907,
+      113,
+      52644,
+      66,
+      2204,
+      895,
+      4
+    ]
+  },
+  "Our company's entire customer database was leaked online.": {
+    "pieces": [
+      "\u2581Our",
+      "\u2581company",
+      "'",
+      "s",
+      "\u2581entire",
+      "\u2581customer",
+      "\u2581database",
+      "\u2581was",
+      "\u2581leaked",
+      "\u2581online",
+      "."
+    ],
+    "ids": [
+      3766,
+      169,
+      17,
+      11,
+      1172,
+      6199,
+      6134,
+      10,
+      17237,
+      1546,
+      4
+    ]
+  },
+  "The sound of the rushing waterfall was calming after a long hike.": {
+    "pieces": [
+      "\u2581The",
+      "\u2581sound",
+      "\u2581of",
+      "\u2581the",
+      "\u2581rushing",
+      "\u2581waterfall",
+      "\u2581was",
+      "\u2581calming",
+      "\u2581after",
+      "\u2581a",
+      "\u2581long",
+      "\u2581hike",
+      "."
+    ],
+    "ids": [
+      12,
+      1372,
+      5,
+      2,
+      8890,
+      12530,
+      10,
+      80212,
+      57,
+      8,
+      244,
+      23992,
+      4
+    ]
+  },
+  "The old man the boat.": {
+    "pieces": [
+      "\u2581The",
+      "\u2581old",
+      "\u2581man",
+      "\u2581the",
+      "\u2581boat",
+      "."
+    ],
+    "ids": [
+      12,
+      412,
+      594,
+      2,
+      2264,
+      4
+    ]
+  },
+  "The horse raced past the barn fell.": {
+    "pieces": [
+      "\u2581The",
+      "\u2581horse",
+      "\u2581raced",
+      "\u2581past",
+      "\u2581the",
+      "\u2581barn",
+      "\u2581fell",
+      "."
+    ],
+    "ids": [
+      12,
+      2468,
+      8139,
+      1166,
+      2,
+      10012,
+      1902,
+      4
+    ]
+  },
+  "I love eating pizza": {
+    "pieces": [
+      "\u2581I",
+      "\u2581love",
+      "\u2581eating",
+      "\u2581pizza"
+    ],
+    "ids": [
+      122,
+      890,
+      7983,
+      20704
+    ]
+  }
+}
